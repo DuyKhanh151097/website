@@ -89,6 +89,9 @@ body {
     overflow-x: hidden;
     transition: background-color 0.55s ease, color 0.3s ease;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    touch-action: pan-y pinch-zoom;
+    overscroll-behavior-y: none;
 }
 
 body::before,
@@ -161,6 +164,10 @@ body::after {
     }
     .architectural-backdrop {
         contain: strict;
+    }
+    body::before,
+    body::after {
+        animation: none;
     }
 }
 
@@ -2783,6 +2790,21 @@ body.is-in-intro .site-header {
 
 @media (max-width: 767px) {
     .road-intro { height: 1700vh; }
+    .road-intro__stage {
+        height: 100vh;
+        height: 100dvh;
+        contain: layout paint;
+    }
+    .ri-center {
+        width: calc(100vw - 32px);
+        margin-left: calc((100vw - 32px) / -2);
+    }
+    .ri-title { font-size: clamp(1.7rem, 8vw, 2.15rem); }
+    .ri-title--xl { font-size: clamp(2rem, 9vw, 2.45rem); }
+    .ri-b0 .ri-title--xl {
+        font-size: clamp(1.7rem, 8vw, 2.25rem);
+        line-height: 1.18;
+    }
     .ri-center.ri-high { top: 24%; }
     .ri-side {
         left: 6vw;
@@ -3530,10 +3552,39 @@ body.theme-light #contact      { --accent-primary: #dc5a3a; --border-accent: rgb
     /* No blur on cards: it is costly to composite while a phone is scrolling */
     [data-reveal] { transform: translate3d(0, 18px, 0); }
 
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    .header-container {
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+        gap: 8px;
+        padding-top: max(10px, env(safe-area-inset-top));
+    }
+    .header-container > div:last-child { gap: 6px; }
+    .brand { gap: 8px; min-width: 0; }
+    .brand-mark { flex-shrink: 0; }
+    .brand-name {
+        max-width: 112px;
+        white-space: normal;
+        line-height: 1.05;
+    }
+    .lang-switch-group { gap: 1px; padding: 1px; }
+    .lang-btn { min-width: 32px; min-height: 32px; padding-inline: 5px; }
+    .theme-toggle-btn,
+    .menu-hamburger-btn { width: 32px; height: 32px; }
+
     .ri-heading--flow {
-        font-size: clamp(1.15rem, 6.2vw, 1.7rem);
+        font-size: clamp(0.88rem, 4.9vw, 1.18rem);
         letter-spacing: -0.02em;
-        white-space: nowrap;
+        line-height: 1.25;
+        white-space: normal;
+        overflow-wrap: normal;
+        word-break: normal;
+        text-wrap: balance;
     }
     .lang-btn { min-width: 36px; min-height: 36px; }
 
@@ -3544,6 +3595,26 @@ body.theme-light #contact      { --accent-primary: #dc5a3a; --border-accent: rgb
     .contact-monumental-statement { word-break: break-word; }
 
     .site-footer > div { text-align: center; }
+
+    #warp-title {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        justify-content: center;
+        gap: 8px;
+        overflow: hidden;
+        font-size: clamp(0.72rem, 3.8vw, 0.9rem);
+        letter-spacing: 0.18em;
+        white-space: normal;
+        text-align: center;
+    }
+    #warp-title .eyebrow-line {
+        flex: 0 0 24px;
+        width: 24px;
+    }
+    .warp-title__name {
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
 }
 
 /* Landscape phones and other short windows: the intro pages shrink to fit the height */

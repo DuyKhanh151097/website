@@ -212,7 +212,7 @@ window.TPL.RoadIntro = (function () {
     }
 
     function buildParticles() {
-        N = lowPower ? 2600 : 5200;
+        N = lowPower ? 1800 : 5200;
         P = {
             cloudX: new Float32Array(N),
             cloudY: new Float32Array(N),
@@ -334,7 +334,7 @@ window.TPL.RoadIntro = (function () {
         syncDeviceClass();
         const w = stage.clientWidth;
         const h = stage.clientHeight;
-        const ratio = Math.min(window.devicePixelRatio || 1, lowPower ? 1.5 : 1.75);
+        const ratio = Math.min(window.devicePixelRatio || 1, lowPower ? 1.25 : 1.75);
         // Mobile browsers fire resize while the address bar slides; only touch the canvas when its size really changes
         if (w === vw && h === vh && ratio === dpr) return;
         vw = w;
@@ -923,7 +923,7 @@ window.TPL.RoadIntro = (function () {
 
     function loop(now) {
         if (!running) return;
-        const frameInterval = lowPower ? 1000 / 30 : 0;
+        const frameInterval = lowPower ? 1000 / 24 : 0;
         if (!frameInterval || now - lastCanvasFrame >= frameInterval) {
             lastCanvasFrame = now;
             renderFrame(now);

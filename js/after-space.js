@@ -298,7 +298,7 @@ window.TPL.AfterSpace = (function () {
         lowPower = window.matchMedia('(max-width: 767px), (pointer: coarse)').matches;
         vw = window.innerWidth;
         vh = window.innerHeight;
-        dpr = Math.min(window.devicePixelRatio || 1, lowPower ? 1.5 : 1.75);
+        dpr = Math.min(window.devicePixelRatio || 1, lowPower ? 1.25 : 1.75);
         canvas.width = Math.round(vw * dpr);
         canvas.height = Math.round(vh * dpr);
         f = Math.max(vw, vh * 1.25) * 0.55;
@@ -631,7 +631,7 @@ window.TPL.AfterSpace = (function () {
         }
         const g = gates[titleIdx];
         const t = g ? clamp01(1 - (g.z - camZ) / g.depth) : 0;
-        const scale = 0.8 + 0.4 * t * t;
+        const scale = lowPower ? 0.88 + 0.12 * t * t : 0.8 + 0.4 * t * t;
         const key = `${k.toFixed(3)}|${scale.toFixed(3)}`;
         if (key === titleKey) return;
         titleKey = key;

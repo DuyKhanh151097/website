@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const duration = 2800;
+        const mobileDevice = window.matchMedia('(max-width: 767px), (pointer: coarse)').matches;
+        const duration = mobileDevice ? 1600 : 2800;
         const startTime = performance.now();
         // Ease in-out so the count starts gently, speeds up, then settles on 100
         const ease = t => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
