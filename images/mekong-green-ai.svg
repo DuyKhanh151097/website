@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#07111f"/>
+  <g fill="none" stroke="#22d3ee" stroke-width="5" opacity=".8">
+    <circle cx="480" cy="270" r="190"/><circle cx="480" cy="270" r="140"/>
+    <path d="M290 270h380M480 80v380"/>
+  </g>
+  <g fill="#34d399"><circle cx="480" cy="270" r="28"/><circle cx="480" cy="80" r="12"/><circle cx="670" cy="270" r="12"/><circle cx="480" cy="460" r="12"/><circle cx="290" cy="270" r="12"/></g>
+  <text x="480" y="505" fill="#f4f7fb" font-family="Arial" font-size="30" text-anchor="middle">MEKONG GREEN AI</text>
+  <text x="480" y="535" fill="#22d3ee" font-family="monospace" font-size="16" text-anchor="middle">EDGE INTELLIGENCE / CONNECTED SYSTEMS</text>
+</svg>

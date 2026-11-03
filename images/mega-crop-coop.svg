@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#07111f"/>
+  <g fill="none" stroke="#34d399" stroke-width="5">
+    <path d="M180 420h600"/><path d="M260 420V250l220-130 220 130v170"/>
+    <path d="M220 420c120-90 400-90 520 0"/>
+  </g>
+  <g fill="#22d3ee"><circle cx="480" cy="120" r="18"/><circle cx="260" cy="250" r="12"/><circle cx="700" cy="250" r="12"/></g>
+  <text x="480" y="470" fill="#f4f7fb" font-family="Arial" font-size="30" text-anchor="middle">MEGA CROP-COOP / TÂY NINH</text>
+  <text x="480" y="505" fill="#22d3ee" font-family="monospace" font-size="16" text-anchor="middle">DIGITAL AGRICULTURE / AI ASSISTANT</text>
+</svg>
