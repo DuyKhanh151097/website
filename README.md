@@ -1,13 +1,8 @@
-# Nguyễn Duy Khánh — Interactive AI Portfolio
+# Interactive AI Portfolio
 
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Website-Live-111827?style=for-the-badge&logo=githubpages&logoColor=22d3ee)](https://duykhanh151097.github.io/website/)
-[![GitHub](https://img.shields.io/badge/GitHub-duykhanhmedia-181717?style=for-the-badge&logo=github)](https://github.com/duykhanhmedia)
-[![Facebook](https://img.shields.io/badge/Facebook-Kết_nối-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/duykhanhit15/)
-
-**Giám đốc kinh doanh | Điều phối viên dự án CNTT | Chiến lược AI | MC sự kiện**
-
 Website portfolio tương tác về Edge AI, Full-stack, quản trị dữ liệu, nghiên cứu khoa học và chuyển đổi số thực địa.
 
 </div>
@@ -15,8 +10,6 @@ Website portfolio tương tác về Edge AI, Full-stack, quản trị dữ liệ
 ---
 
 ## Giới thiệu
-
-Nguyễn Duy Khánh là người bắt đầu hành trình công nghệ từ năm 2019, tập trung xây dựng các giải pháp có thể vận hành trong môi trường thực tế — từ mô hình AI cục bộ, hệ thống dữ liệu không gian đến nền tảng Full-stack và tác tử tự động hóa.
 
 Portfolio này được thiết kế theo phong cách hệ thống công nghệ tương lai, kết hợp motion tiếp tục, hiệu ứng tương tác theo chuột, canvas animation và trải nghiệm song ngữ Việt — Anh.
 
@@ -54,11 +47,6 @@ Hệ sinh thái tương tác livestream thời gian thực xây dựng bằng No
 
 ### AI Automation Platform
 Tác tử AI và local RAG pipeline kết hợp Neo4j, TinyLlama, Qwen-VL và LLaVA-Med.
-
-## Nghiên cứu & công bố
-
-- `A Safety-Constrained Edge-AI Framework for Evidence-Grounded Communication in Smart Primary Care`
-- `AgriInsect360: An Expert-Validated Web-GIS and YOLO11n Framework for Spatial Insect Pest Observation and Knowledge Retrieval`
 
 ## Công nghệ dự án web
 
@@ -129,17 +117,3 @@ https://duykhanh151097.github.io/website/
 - Tài liệu CV/chứng nhận: thư mục `docs/`
 
 README của dự án được tối ưu để hiển thị trên GitHub, nhưng website không sử dụng SVG làm asset chính; hình ảnh portfolio được lưu ở định dạng PNG/JPG.
-
-## Liên hệ
-
-- **Email:** [ndkhanh484886@gmail.com](mailto:ndkhanh484886@gmail.com)
-- **Điện thoại:** `0857484886`
-- **GitHub:** [github.com/duykhanhmedia](https://github.com/duykhanhmedia)
-- **Facebook:** [facebook.com/duykhanhit15](https://www.facebook.com/duykhanhit15/)
-
----
-
-<div align="center">
-<strong>Nguyễn Duy Khánh</strong><br>
-AI strategy • Business direction • Full-stack • Event hosting
-</div>
