@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![Portfolio banner](images/duy-khanh-facebook.jpg)
-
 [![Website](https://img.shields.io/badge/Website-Live-111827?style=for-the-badge&logo=githubpages&logoColor=22d3ee)](https://duykhanh151097.github.io/website/)
 [![GitHub](https://img.shields.io/badge/GitHub-duykhanhmedia-181717?style=for-the-badge&logo=github)](https://github.com/duykhanhmedia)
 [![Facebook](https://img.shields.io/badge/Facebook-Kết_nối-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/duykhanhit15/)
