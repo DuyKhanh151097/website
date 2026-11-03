@@ -2874,6 +2874,22 @@ body.is-in-intro .site-header {
     .ri-flow__dot { width: 56px; height: 56px; margin: 0; }
     .ri-flow__title { font-size: 1rem; }
 
+    .ri-page--flow {
+        top: 50%;
+        max-height: calc(100dvh - 104px);
+        height: auto;
+        overflow: visible;
+    }
+    .ri-page--flow .ri-page__head {
+        margin-bottom: clamp(14px, 2vh, 22px);
+    }
+    .ri-page--flow .ri-flow__nodes {
+        gap: clamp(7px, 1.1vh, 12px);
+    }
+    .ri-page--flow .ri-flow__node {
+        min-height: clamp(48px, 7vh, 58px);
+    }
+
     .ri-pillars { grid-template-columns: 1fr; gap: 10px; }
     .ri-pillars .ri-card { min-height: 0; }
     .ri-pillars .ri-card__text { display: none; }
